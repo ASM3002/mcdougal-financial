@@ -1,0 +1,21 @@
+/*--------------HERO--------------*/
+#contact-page-container {
+    width: 100%;
+    color: #0b5394ff;
+    padding: 100px;
+    text-align: center;
+}
+#contact-page-container h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+#contact-info {
+    line-height: 30px;
+    padding: 50px;
+}
+
+#contact-hours {
+    font-family: 'Cormorant Garamond', serif;
+    color: #b1c7f0;
+}

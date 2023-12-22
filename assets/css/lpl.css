@@ -1,0 +1,214 @@
+/*--------------HERO--------------*/
+#lpl-hero-container {
+    width: 100%;
+    color: #0b5394ff;
+    padding: 100px;
+    text-align: center;
+}
+
+#lpl-logo {
+    width: 40%;
+}
+
+/*--------------------------------------------------------------
+# GENERAL LPL INFORMATION
+--------------------------------------------------------------*/
+#lpl-description-container {
+    width: 100%;
+    background-color: #b1c7f0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+}
+
+#lpl-general-description {
+    width: 60%;
+    min-width: 50%;
+    color: #0b5394;
+    padding: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 8px #888888;
+    line-height: 35px;
+}
+
+#lpl-general-description a {
+    color: #0b5394;
+    transition: all 0.5s;
+}
+#lpl-general-description a:hover {
+    color: #b1c7f0;
+}
+
+#lpl-leader-points {
+    color: #ffffff;
+    display: inline;
+    padding-left: 50px;
+    
+}
+#lpl-leader-points h1{
+    padding-top: 25px;
+}
+#lpl-leader-points h3{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+/*--------------------------------------------------------------
+# RESEARCH NAV LINKS
+--------------------------------------------------------------*/
+#lpl-research-links {
+    width: 100;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    background-color: #b1c7f0;
+}
+/*-------- Weekly Market Commentary --------*/
+#research-section {
+    width: 20%;
+    color: #0b5394ff;
+    padding: 5px;
+    text-align: center;
+    background-color:#ffffff;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 50px;
+}
+
+#research-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#research-section p {
+    color:#b1c7f0;
+}
+
+.image-format {
+    width: 50%;
+    transition: all 0.5s;
+}
+.image-format:hover {
+    width: 40%;
+}
+
+/*--------------------------------------------------------------
+# FIDUCIARY FOCUS
+--------------------------------------------------------------*/
+#lpl-fiduciary-container {
+    width: 100%;
+    align-items: center;
+    color: #0b5394;
+    margin: 50px;
+}
+
+#lpl-fiduciary-container h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#lpl-collapsibles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collapsible {
+    width: 80%;
+    background-color: #0b5394;
+    color: #ffffff;
+    padding: 25px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.active, .collapsible:hover {
+    background-color: #b1c7f0;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+
+
+.lpl-fiduciary-collapsible-content {
+    padding: 0 25px;
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border:3px solid #0b5394;
+    margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+# BY THE NUMBERS
+--------------------------------------------------------------*/
+#lpl-btn-container {
+    color: #0b5394;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.lpl-btn-media-adapt {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lpl-btn-statistic-section {
+    display: block;
+    text-align: start;
+}
+
+
+/*General Description*/
+@media only screen and (max-width: 1000px) {
+    #lpl-description-container {
+        display: block;
+    }
+
+    #lpl-general-description {
+        width: 100%;
+    }
+
+    #research-section {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #lpl-research-links {
+        display: block;
+    }
+}
+/*Fiduciary Drop Down Boxes | BTN Data Points*/
+@media only screen and (max-width: 1280px) {
+    #lpl-collapsibles {
+        display: block;
+    }
+
+    #lpl-btn-container {
+        display: flex;
+        margin: 50px;
+    }
+    .lpl-btn-media-adapt {
+        width: 100%;
+        display: block;
+        text-align: start;
+    }
+
+}
+

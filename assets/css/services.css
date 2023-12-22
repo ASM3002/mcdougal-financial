@@ -1,0 +1,159 @@
+/*--------------------------------------------------------------
+# Services-Nav-Bar
+--------------------------------------------------------------*/
+#services-subnav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 25px;
+    background-color: #b1c7f0;
+}
+
+.service-mobile-adapt-row {
+    display: block;
+    text-align: center;
+    justify-content: left;
+}
+
+.services-nav-link {
+    color: #0b5394ff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    transition: all 0.5s;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.services-nav-link:hover {
+    color: #ffffff;
+}
+
+.services-nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffffff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.services-nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    #services-subnav-container {
+        flex-wrap: wrap;
+    }
+}
+
+/*--------------------------------------------------------------
+# HERO
+--------------------------------------------------------------*/
+#services-hero-container {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: black;
+    text-align: center;
+}
+
+#services-hero-container h1 {
+    color: #0b5394ff;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#services-hero-container h3 {
+    color: #0b5394ff;
+}
+#services-hero-container p {
+    width: 75%;
+    color: #0b5394ff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*--------------------------------------------------------------
+# REUSABLE PAGE CONTENT CLASSES
+--------------------------------------------------------------*/
+.top-service-category-background {
+    background-image: url(/assets/img/lake.jpg);
+    width: 100%;
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.category-header-container {
+    background-color: rgba(11,83,148,0.7);
+    width: 50%;
+    position:relative;
+    margin: 50px;
+}
+.service-category-decor-bar {
+    width:100%;
+    background-color: #b1c7f0;
+    height: 5px;
+    position: absolute;
+    top:0px;
+}
+.service-category-title {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 50px;
+}
+.service-category-description {
+    color: #ffffff;
+    text-align: left;
+    margin-inline: 50px;
+    margin-bottom:50px;
+    line-height: 35px;
+}
+.service-category-details {
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.service-category-detail {
+    display: block;
+    text-align: left;
+    width: 30%;
+    margin-bottom: 25px;
+}
+.service-category-detail h1 {
+    color: #0b5394ff;
+    font-size: 50px;
+}
+.service-category-detail p {
+    color:#b1c7f0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .category-header-container {
+        width:auto;
+    }
+    .service-category-details {
+        display:block;
+    }
+    .service-category-detail {
+        text-align: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

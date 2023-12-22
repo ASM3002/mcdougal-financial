@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li, #services-dropdown {
+    display: inline;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#main-nav-header {
+    width: 100%;
+    transition: all 0.5s;
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(1,0,0,0.01);
+}
+
+html:not([data-scroll='0']) #main-nav-header {
+    background-color: #0b5394;
+}
+
+#main-nav-header-solid {
+    width: 100%;
+    transition: all 0.5s;
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: #0b5394ff;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/*Mobile Adaptivity-------------------------------------------*/
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    z-index: 20;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.5s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 15;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0b5394ff;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 15px;
+  }
+
+/*Main Nav Menu---------------------------------------------*/
+#home-nav-logo {
+    object-fit: contain;
+    max-width: 450px;
+    height: auto;
+    transition: all 0.5s;
+}
+html:not([data-scroll='0']) #home-nav-logo {
+    max-width: 300px;
+}
+#main-nav-logo {
+    object-fit: contain;
+    max-width: 300px;
+    height: auto;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    width: 100px;
+    padding: 20px;
+}
+
+.nav-link:hover {
+    color: #b1c7f0;
+    transition: color 0.5s; /* For modern browsers */
+}
+
+/*CLIENT PORTAL BUTTON*/
+#nav-client-button {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 60px;
+}
+#nav-client-button:hover {
+    color: #b1c7f0;
+    transition: color 0.5s; /* For modern browsers */
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero-container {
+    background-image: url("/assets/img/farmBG.jpg");
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-text {
+    color: #ffffff;
+    position: absolute;
+}
+
+/*--------------------------------------------------------------
+# Welcome Section
+--------------------------------------------------------------*/
+#welcome-container {
+    width: 100%;
+    padding: 100px;
+    display:flex;
+    justify-content: space-between;
+    color:#0b5394;
+}
+#welcome-left {
+    width: 40%;
+    text-align: right;
+}
+#welcome-left h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;;
+}
+#welcome-right {
+    width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Welcome Links
+--------------------------------------------------------------*/
+.divider-style {
+    height: 3px;
+    background-color: #b1c7f0;
+    margin: 50px;
+}
+.title-style {
+    color:#0b5394;
+    font-size: 50px;;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+#home-service-links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.home-link-item {
+    width: 90%;
+    display: block;
+    text-align: center;
+    color:#0b5394;
+    border: 3px solid #b1c7f0;
+    margin: 25px;
+    margin-bottom: 50px;
+    padding: 30px;
+
+}
+.home-link-item img {
+    width: 100px;
+    aspect-ratio: 1;
+    transition: all 0.5s;
+}
+.home-link-item img:hover {
+    width: 80px;
+}
+
+/*--------------------------------------------------------------
+# OutReach
+--------------------------------------------------------------*/
+#outreach-container {
+    width: 100%;
+    background: rgb(177,199,240);
+    background: linear-gradient(90deg, rgba(177,199,240,1) 0%, rgba(203,217,245,1) 60%, rgba(252,253,254,0) 80%, rgba(255,255,255,0) 100%);
+    position: relative;
+    padding: 100px;
+    display: block;
+}
+#outreach-container h1 {
+    color:#0b5394;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+#outreach-container p {
+    color:#0b5394;
+    text-align: center;
+}
+
+.outreach-aligner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-contact-info {
+    color:#0b5394;
+    text-align: center;
+    vertical-align: middle;
+}
+#home-contact-info h1 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/*--------------------------------------------------------------
+# BROKERCHECK
+--------------------------------------------------------------*/
+.brokercheck {
+    height: 25px;
+    position:fixed;
+    bottom: 0px;
+    right:0px;
+    z-index: 100;
+    transition: all 0.5s;
+    margin: 10px;
+}
+.brokercheck:hover {
+    height: 40px;
+    position:fixed;
+    bottom: 0px;
+    right:0px;
+    z-index: 100;
+}
+
+
+/*--------------------------------------------------------------
+# MOBILE ADAPTATION
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+    header li {
+        display: block;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+    #hero-container {
+        height: 50vh;
+    }
+    /*Welcome Section*/
+    #welcome-container {
+        display:block;
+        padding: 50px;
+    }
+    #welcome-left {
+        width: 100%;
+        text-align: center;
+    }
+    #welcome-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+
+    /*Welcome-links*/
+    #home-service-links-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /*Let's Talk Container blocking*/
+    #outreach-container form {
+        width: 100%;
+    }
+    #home-contact-info {
+        width: 100%;
+    }
+}

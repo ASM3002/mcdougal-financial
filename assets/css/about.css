@@ -1,0 +1,86 @@
+/*-------- About Hero -------*/
+#about-hero-container {
+    width: 100%;
+    position: relative;
+    padding: 75px;
+}
+
+#about-hero-container h1 {
+    color: #0b5394;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#about-origin-information-containter {
+    text-align: center;
+    color: #0b5394;
+    border: 3px solid #0b5394;
+    padding: 75px;
+    margin: 75px;
+    padding-inline: 10%;
+    line-height: 2rem;
+}
+
+/*-------------------------------------------------------------*/
+#word-from-staff {
+    width: 100%;
+    background-color: #b1c7f0;
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px;
+}
+
+.headshot-container {
+    position: relative;
+    top: -100px;
+    aspect-ratio: 0.75;
+    height: 50vh;
+    background-image: url("/assets/img/headshot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.headshot-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 25px;
+    left: -25px;
+    border: 3px solid #0b5394;
+    z-index: 2;
+}
+
+.about-detail-container {
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    display: inline;
+    width: 50%
+}
+
+.about-detail-container h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    color:#0b5394
+}
+
+@media only screen and (max-width: 1000px) {
+    #about-hero-container {
+        height: 50vh;
+    }
+    
+    
+    #word-from-staff {
+        display: block;
+    }
+    .headshot-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

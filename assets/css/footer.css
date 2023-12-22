@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+#main-footer {
+    position: relative;
+    background-color: #0b5394;
+}
+
+#footer-background {
+    background-image: url("/assets/img/dark_lighthouse.jpg");
+    width: 100%;
+    height: auto;
+    background-position: 0px -280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#contact-information {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 20px;
+}
+#contact-information p {
+    font-family: "Cormorant Garamond";
+}
+#contact-information span {
+    font-size: 22px;
+    font-family: "times";
+    font-weight:100;
+}
+
+#finra-disclaimer {
+    color: #ffffff;
+    font-size: 12px;
+    background-color: rgba(74, 74, 74, 0.5);
+    padding: 25px;
+    position: relative;
+    bottom: 0;
+}
+#finra-disclaimer a {
+    color:#ffffff;
+    transition: all 0.5s;
+}
+#finra-disclaimer a:hover {
+    color:#858585;
+}
+
+
+
+/*--------------------------------------------------------------
+# MOBILE ADAPTATION
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    #footer-background {
+        background-position: center;
+    }
+}

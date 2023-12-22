@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#main-nav-header {
+    width: 100%;
+    transition: all 0.5s;
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(1,0,0,0.01);
+}
+
+html:not([data-scroll='0']) #main-nav-header {
+    background-color: #0b5394ff;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/*Mobile Adaptivity-------------------------------------------*/
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    z-index: 20;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.5s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 15;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0b5394ff;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 15px;
+  }
+
+/*Main Nav Menu---------------------------------------------*/
+#main-nav-logo {
+    object-fit: contain;
+    max-width: 300px;
+    height: auto;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    width: 100px;
+    padding: 20px;
+}
+
+.nav-link:hover {
+    color: #b1c7f0;
+    transition: color 0.5s; /* For modern browsers */
+}
+
+/*CLIENT PORTAL BUTTON*/
+#nav-client-button {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 60px;
+}
+#nav-client-button:hover {
+    color: #b1c7f0;
+    transition: color 0.5s; /* For modern browsers */
+}
+
+/*--------------------------------------------------------------
+# MOBILE ADAPTATION
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+    header li {
+        display: block;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
