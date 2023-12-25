@@ -11,6 +11,7 @@
         <!--CASCADIGN STYLE SHEETS-->
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/contact.css" rel="stylesheet">
+        <link href="assets/css/form.css" rel="stylesheet">
         <link href="assets/css/footer.css" rel="stylesheet">
       </head>
 </head>
@@ -34,7 +35,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="about.html">About</a></li>
                 <li><a class="nav-link" href="lpl.html">LPL</a></li>
                 <li><a class="nav-link" href="services.html">Services</a></li>
@@ -56,6 +57,46 @@
             </div>
             <h3>Call or email to schedule an appointment today!</h3>
         </div>
+        <div id="outreach-container">
+            <h1>Let's Talk</h1>
+            <p>Take the First Step</p>
+            <div class="outreach-aligner">
+                <form id="contactForm" class="contact-form">
+                    <div class="contact-form-alert" role="alert">Submitted successfully, we will get back soon!</div>
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" required></textarea>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="home-contact-info">
+                    <h1>Hours</h1>
+                    <h3>Mon - Fri: 8 AM - 5 PM</h3>
+                    <h3 style="margin-bottom: 25px;">Sat - Sun: Closed</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.866485904033!2d-82.85694062373095!3d40.962503622241876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883983c893ece79d%3A0xe18f8ee2ad407e14!2s118%20W%20Mansfield%20St%2C%20New%20Washington%2C%20OH%2044854!5e0!3m2!1sen!2sus!4v1703253314174!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div> 
     </main>
     <a href="https://brokercheck.finra.org" target="_blank" rel="noopener noreferrer"><img class="brokercheck" src="/assets/img/brokercheck.png"></a>
     <!-- ======= Footer ======= -->
@@ -107,6 +148,8 @@
         </div>
     </footer><!-- End Footer -->
 
-    <script src="/assets/js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script src="/assets/js/contact-form.js"></script>
 </body>
 </html>

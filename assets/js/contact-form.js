@@ -1,20 +1,52 @@
-const form = document.getElementById("form");
 
-form.addEventListener("submit", function (event) {
-    // Preventing page reload on submit
-    event.preventDefault(); 
+const firebaseConfig = {
+  apiKey: "AIzaSyCmjbSD_pnz61aBgjuCUgzjqMLOeL-Xr78",
+  authDomain: "mcdougal-financial-web.firebaseapp.com",
+  databaseURL: "https://mcdougal-financial-web-default-rtdb.firebaseio.com",
+  projectId: "mcdougal-financial-web",
+  storageBucket: "mcdougal-financial-web.appspot.com",
+  messagingSenderId: "857586597343",
+  appId: "1:857586597343:web:da23b0169540836b4a986a",
+  measurementId: "G-7YSHXJZ7BR"
+};
 
-    // Selecting the email value filled by the user
-    const email = document.getElementById("email").value;
+//Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-    // Checking for valid email using a simple regex pattern
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//Create Reference for Database
+const database = firebase.database()
 
-    if (!emailPattern.test(email)) {
-      alert("Wrong email format");
-      return;
-    }
+const ref = database.ref('messages')
 
-    // If everything passes, show success message
-    alert("Form submitted successfully");
-});
+//Get Contact Form Data from HTML
+const form = document.getElementById('contactForm');
+const alert = document.querySelector('.contact-form-alert');
+
+form.addEventListener('submit', submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  var name = getElementVal('name');
+  var email = getElementVal('email');
+  var phone = getElementVal('phone');
+  var message = getElementVal('message');
+
+  ref.push({
+    name:name,
+    email:email,
+    phone:phone,
+    message:message
+  })
+
+  alert.style.display="block";
+
+  setTimeout(() =>{
+    alert.style.display="none";
+  }, 2000)
+  form.reset();
+}
+
+const getElementVal = (id) => {
+  return document.getElementById(id).value;
+}

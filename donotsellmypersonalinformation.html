@@ -35,7 +35,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="about.html">About</a></li>
                 <li><a class="nav-link" href="lpl.html">LPL</a></li>
                 <li><a class="nav-link" href="services.html">Services</a></li>
@@ -51,6 +51,7 @@
             <h1>We Value Your Privacy</h1>
             <h3 id="contact-hours">Hours: Mon-Fri 8 AM - 5 PM</h3>
             <form id="personal-info-form">
+                <div class="personal-info-form-alert" role="alert">Submitted successfully, we will get back soon!</div>
                 <div class="input-container">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required />
@@ -79,7 +80,7 @@
                     <input type="checkbox" id="request-deletion" name="request-deletion">
                     <label for="request-deletion">REQUEST DELETION OF PERSONAL INFORMATION</label>
                 </div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </main>
@@ -134,5 +135,8 @@
     </footer><!-- End Footer -->
 
     <script src="/assets/js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script src="/assets/js/personal-info-form.js"></script>
 </body>
 </html>

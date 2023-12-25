@@ -28,7 +28,7 @@ li, #services-dropdown {
     align-items: center;
     position: fixed;
     z-index: 10;
-    background-color: rgb(1,0,0,0.01);
+    background-color: rgb(1,0,0,0.0);
 }
 
 html:not([data-scroll='0']) #main-nav-header {
@@ -113,12 +113,23 @@ html:not([data-scroll='0']) #main-nav-header {
 html:not([data-scroll='0']) #home-nav-logo {
     max-width: 300px;
 }
+
 #main-nav-logo {
     object-fit: contain;
     max-width: 300px;
     height: auto;
 }
-
+.nav-link-home {
+    color: #0b5394;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    width: 100px;
+    padding: 20px;
+}
+html:not([data-scroll='0']) .nav-link-home {
+    color:#ffffff;
+}
 .nav-link {
     color: #ffffff;
     font-size: 15px;
@@ -128,12 +139,23 @@ html:not([data-scroll='0']) #home-nav-logo {
     padding: 20px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link-home:hover, html:not([data-scroll='0']) .nav-link-home:hover {
     color: #b1c7f0;
     transition: color 0.5s; /* For modern browsers */
 }
 
 /*CLIENT PORTAL BUTTON*/
+#nav-client-button-home {
+    color: #0b5394;
+    font-size: 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px 60px;
+}
+html:not([data-scroll='0']) #nav-client-button-home {
+    color:#ffffff;
+}
 #nav-client-button {
     color: #ffffff;
     font-size: 15px;
@@ -142,7 +164,7 @@ html:not([data-scroll='0']) #home-nav-logo {
     border-width: 1px;
     padding: 15px 60px;
 }
-#nav-client-button:hover {
+#nav-client-button:hover, #nav-client-button-home:hover, html:not([data-scroll='0']) #nav-client-button-home:hover {
     color: #b1c7f0;
     transition: color 0.5s; /* For modern browsers */
 }
@@ -151,9 +173,9 @@ html:not([data-scroll='0']) #home-nav-logo {
 # Hero Section
 --------------------------------------------------------------*/
 #hero-container {
-    background-image: url("/assets/img/farmBG.jpg");
+    background-image: url("/assets/img/family_photo.jpg");
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,6 +252,15 @@ html:not([data-scroll='0']) #home-nav-logo {
 /*--------------------------------------------------------------
 # OutReach
 --------------------------------------------------------------*/
+.contact-form-alert {
+    color: #0b5394;
+    text-align: center;
+    background: rgb(0, 220, 0);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    transition: all 0.5s;
+}
 #outreach-container {
     width: 100%;
     background: rgb(177,199,240);
@@ -260,6 +291,7 @@ html:not([data-scroll='0']) #home-nav-logo {
     color:#0b5394;
     text-align: center;
     vertical-align: middle;
+    width: 40%
 }
 #home-contact-info h1 {
     font-family: 'Cormorant Garamond', serif;

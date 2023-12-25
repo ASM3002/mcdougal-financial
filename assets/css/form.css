@@ -23,9 +23,19 @@
     border-radius: 5px;
     border: none;
     color: #fff;
+    background-color: #0b5394;
     cursor: pointer;
     width: 100%;
     font-size: 1.6rem;
+}
+.personal-info-form-alert {
+    color: #0b5394;
+    text-align: center;
+    background: rgb(0, 220, 0);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    transition: all 0.5s;
 }
 /*--------------------------------------------------------*/
 .input-container {
@@ -51,6 +61,7 @@
     border-radius: 5px;
     border: none;
     color: #fff;
+    background-color: #0b5394;
     cursor: pointer;
     width: 100%;
     font-size: 1.6rem;

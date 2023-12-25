@@ -159,13 +159,32 @@
 }
 
 /*--------------------------------------------------------------
-# TAX DOCUMENTS 
+# TAX SUB CATEGORIES 
 --------------------------------------------------------------*/
+/*Tax Links*/
+#tax-links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.tax-detail-link {
+    color:#0b5394;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.tax-detail-link:hover {
+    color:#b1c7f0;
+}
+/*Tax Documents*/
 #tax-documents-container {
     width: 100%;
     align-items: center;
+    text-align: center;
     color: #0b5394;
-    margin: 50px;
+    display: block;
+    padding: 50px;
 }
 
 #tax-documents-container h1 {
@@ -174,22 +193,27 @@
     margin-bottom: 15px;
     text-align: center;
 }
-
-#tax-doc-collapsibles {
-    display: flex;
-    justify-content: space-evenly;
+.tax-toggle-vert {
+    display: block;
 }
-
 .collapsible {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0b5394;
     color: #ffffff;
     padding: 25px;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 25px;
     transition: all 0.5s;
+}
+.collapsible a {
+    color: #ffffff;
+}
+.collapsible p {
+    font-size: 0.9rem;
 }
 .active, .collapsible:hover {
     background-color: #b1c7f0;
@@ -199,16 +223,13 @@
     color: white;
     font-size: 20px;
     float: right;
-    margin-left: 5px;
   }
   .active:after {
     content: "\2212";
   }
 
-
 .tax-document-collapsible-content {
-    padding: 0 25px;
-    width: 80%;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
@@ -219,4 +240,31 @@
 .doc-descriptor {
     font-size: 0.9rem;
     color:#b1c7f0;
+}
+.collapsible:hover .doc-descriptor {
+    color: #ffffff;
+}
+.active .doc-descriptor {
+    color: #ffffff;
+}
+/*Tax Rates*/
+
+.tax-rate-table {
+    width: 100;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px;
+    letter-spacing: .07rem;;
+}
+
+.tax-rate-table th {
+    width: 15%;
+    border: 2px solid #0b5394;
+    padding: 15px;
+}
+
+.tax-rate-table td {
+    width: 15%;
+    border: 2px solid #b1c7f0;
+    padding: 15px;
 }
