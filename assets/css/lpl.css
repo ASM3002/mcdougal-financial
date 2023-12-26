@@ -100,7 +100,7 @@
     width: 100%;
     align-items: center;
     color: #0b5394;
-    margin: 50px;
+    margin: 0px;
 }
 
 #lpl-fiduciary-container h1 {
@@ -114,11 +114,17 @@
 
 #lpl-collapsibles {
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
+    padding: 10px;
+}
+
+.lpl-collapsibles-spacing {
+    padding: 10px;
 }
 
 .collapsible {
-    width: 80%;
+    width: 100%;
     background-color: #0b5394;
     color: #ffffff;
     padding: 25px;
@@ -136,7 +142,6 @@
     color: white;
     font-size: 20px;
     float: right;
-    margin-left: 5px;
   }
   .active:after {
     content: "\2212";
@@ -145,7 +150,7 @@
 
 .lpl-fiduciary-collapsible-content {
     padding: 0 25px;
-    width: 80%;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
@@ -161,12 +166,12 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px;
+    padding: 10px;
     margin-bottom: 40px;
 }
 
 .lpl-btn-media-adapt {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -174,12 +179,13 @@
 .lpl-btn-statistic-section {
     display: block;
     text-align: start;
+    margin-bottom: 25px;
 }
 
 /*Bottom Date Disclaimer Tag*/
 .disclaimer {
     color:#b1c7f0;
-    margin-left: 50px;
+    padding-inline: 50px;
 }
 
 /*General Description*/
@@ -211,7 +217,7 @@
 
     #lpl-btn-container {
         display: flex;
-        margin: 50px;
+        padding: 50px;
     }
     .lpl-btn-media-adapt {
         width: 100%;
@@ -221,16 +227,24 @@
 
 }
 
-@media only screen and (max-width: 650px) {
-    #lpl-fiduciary-container h1 {
-        text-align: left;
-    }
-    
+@media only screen and (max-width: 600px) {    
     #lpl-logo {
         width: 100%;
     }
+    #lpl-description-container {
+        padding: 25px;
+    }
+    #lpl-leader-points h1 {
+        font-size: 20px;
+    }
+    #lpl-leader-points h3 {
+        font-size: 15px;
+    }
 
-    .lpl-btn-statistic-section {
-        text-wrap: wrap;
+    .collapsible {
+        font-size: 20px;
+    }
+    #lpl-btn-container {
+        display: block;
     }
 }
