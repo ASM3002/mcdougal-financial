@@ -374,3 +374,16 @@ html:not([data-scroll='0']) #nav-client-button-home {
         width: 100%;
     }
 }
+
+
+
+@media only screen and (max-width: 500px) {
+
+    #home-nav-logo {
+        max-width: 300;
+    }
+
+    #outreach-container {
+        padding: 15px;
+    }
+}
