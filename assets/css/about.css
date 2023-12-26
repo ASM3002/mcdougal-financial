@@ -2,7 +2,7 @@
 #about-hero-container {
     width: 100%;
     position: relative;
-    padding: 75px;
+    padding: 50px;
 }
 
 #about-hero-container h1 {
@@ -19,7 +19,8 @@
     color: #0b5394;
     border: 3px solid #0b5394;
     padding: 75px;
-    margin: 75px;
+    margin: 25px;
+    margin-inline: 75px;
     padding-inline: 10%;
     line-height: 2rem;
 }

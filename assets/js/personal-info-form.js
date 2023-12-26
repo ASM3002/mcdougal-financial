@@ -42,7 +42,8 @@ const firebaseConfig = {
       message:message,
       prohibit_sale:prohibit_sale,
       request_copy:request_copy,
-      request_deletion:request_deletion  
+      request_deletion:request_deletion,
+      date: Date()  
     })
   
     alert.style.display="block";

@@ -36,7 +36,8 @@ function submitForm(e) {
     name:name,
     email:email,
     phone:phone,
-    message:message
+    message:message,
+    date:Date()
   })
 
   alert.style.display="block";
