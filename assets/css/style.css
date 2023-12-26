@@ -376,8 +376,7 @@ html:not([data-scroll='0']) #nav-client-button-home {
 }
 
 
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     #home-nav-logo {
         max-width: 300;

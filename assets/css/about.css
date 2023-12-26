@@ -1,6 +1,7 @@
 /*-------- About Hero -------*/
 #about-hero-container {
     width: 100%;
+    height: auto;
     position: relative;
     padding: 50px;
 }
@@ -16,11 +17,12 @@
 
 #about-origin-information-containter {
     text-align: center;
+    height: auto;
     color: #0b5394;
     border: 3px solid #0b5394;
     padding: 75px;
     margin: 25px;
-    margin-inline: 75px;
+    margin-inline: 25px;
     padding-inline: 10%;
     line-height: 2rem;
 }
@@ -61,7 +63,7 @@
     text-align: center;
     line-height: 50px;
     display: inline;
-    width: 50%
+    width: 50%;
 }
 
 .about-detail-container h1 {
@@ -72,7 +74,7 @@
 
 @media only screen and (max-width: 1000px) {
     #about-hero-container {
-        height: 50vh;
+        height: auto;
     }
     
     
@@ -83,5 +85,13 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
     
+@media only screen and (max-width: 650px) {
+    #about-hero-container {
+        padding-inline: 15px;
+    }
+    #about-origin-information-containter {
+        padding: 15px;
+    }
 }

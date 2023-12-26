@@ -19,3 +19,9 @@
     font-family: 'Cormorant Garamond', serif;
     color: #b1c7f0;
 }
+
+@media only screen and (max-width: 600px) {
+    #contact-page-container {
+        padding: 10px;
+    }
+}
