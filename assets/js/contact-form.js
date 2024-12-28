@@ -1,13 +1,12 @@
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCmjbSD_pnz61aBgjuCUgzjqMLOeL-Xr78",
-  authDomain: "mcdougal-financial-web.firebaseapp.com",
-  databaseURL: "https://mcdougal-financial-web-default-rtdb.firebaseio.com",
-  projectId: "mcdougal-financial-web",
-  storageBucket: "mcdougal-financial-web.appspot.com",
-  messagingSenderId: "857586597343",
-  appId: "1:857586597343:web:da23b0169540836b4a986a",
-  measurementId: "G-7YSHXJZ7BR"
+  apiKey: "AIzaSyAcSXwoios4BswB123e_rkeipl4LibpQQ4",
+  authDomain: "am-web-admin.firebaseapp.com",
+  databaseURL: "https://am-web-admin-default-rtdb.firebaseio.com",
+  projectId: "am-web-admin",
+  storageBucket: "am-web-admin.firebasestorage.app",
+  messagingSenderId: "920858578134",
+  appId: "1:920858578134:web:3f8169fd49dbd943468d77"
 };
 
 //Initialize Firebase
@@ -16,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 //Create Reference for Database
 const database = firebase.database()
 
-const ref = database.ref('messages')
+const ref = database.ref('mcdougal-financial/contact')
 
 //Get Contact Form Data from HTML
 const form = document.getElementById('contactForm');
