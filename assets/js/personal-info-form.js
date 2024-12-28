@@ -15,7 +15,7 @@
   //Create Reference for Database
   const database = firebase.database()
   
-  const ref = database.ref('mcdougal-financial/personal-info')
+  const ref = database.ref('mcdougal-financial/personal')
   
   //Get Contact Form Data from HTML
   const personal_form = document.getElementById('personal-info-form');
